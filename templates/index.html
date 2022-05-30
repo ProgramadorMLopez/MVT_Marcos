@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Mi nombre es: {{nombre}}</h1>
-    <h2>{% for edad in edades %}</h2>
-            <br>{{edad}}
-        {% endfor %}
+    {% for familia in new_familiares %}
+        <h3>El nombre es: {{familia.nombre}}</h3>
+        <h3>El apellido es: {{familia.apellido}}</h3>
+        <h3>La edad es: {{familia.edad}}</h3><br>
+    {%  endfor %}
 </body>
 </html>
