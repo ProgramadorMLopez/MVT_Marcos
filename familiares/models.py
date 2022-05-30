@@ -7,4 +7,3 @@ class familiares(models.Model):
     apellido = models.CharField(max_length=40)
     edad = models.IntegerField()
     fecha_nacimiento = models.DateField()
-    
